@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateUserActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_bright">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="123dp"
+                android:layout_height="148dp"
+                android:layout_marginEnd="248dp"
+                android:layout_marginRight="248dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/dumbell" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="84dp"
+                android:layout_marginRight="84dp"
+                android:layout_marginBottom="52dp"
+                android:text="UPDATE USER"
+                android:textColor="@android:color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_registration_number"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Registration Number"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btn_view"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="search"
+                android:background="@drawable/ok_button_background"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Name"/>
+
+        <EditText
+            android:id="@+id/et_gender"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Gender"/>
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Mobile Number"/>
+        <EditText
+            android:id="@+id/et_nic_number"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="NIC Number"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="Start Date"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tv_start_date_picker"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:background="@drawable/schedule"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_end_date"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="End Date"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tv_end_date_picker"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:background="@drawable/schedule"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="cancel"
+                android:background="@drawable/button_background"
+                android:textColor="@color/colorAccent"/>
+
+            <LinearLayout
+                android:id="@+id/linearPadding"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical"/>
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="update"
+                android:background="@drawable/ok_button_background"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
